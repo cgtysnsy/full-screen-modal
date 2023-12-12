@@ -1,6 +1,11 @@
+"use client"
 import React from 'react';
 
-export default function Modal() {
+
+export default function Modal({onClose}) {
   
-  return <div>Modal</div>;
+    return <div className='modal'>
+        <p>This is some modal</p>
+        <button onClick={onClose}>Close</button>
+  </div>;
 }
